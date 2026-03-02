@@ -1,3 +1,7 @@
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+TASK_FILE = os.path.join(BASE_DIR, "tasks.txt")
 def load_tasks():
     try:
         with open("tasks.txt", "r") as file:
